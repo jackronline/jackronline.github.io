@@ -1,0 +1,79 @@
+
+
+body {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+    background-image: url(./Resources/nature.jpg);
+    margin: 0%;
+}
+
+h1 {
+    text-align: center;
+    opacity: 0.75;
+    font-weight: bold;
+    padding-top: 25px;
+    color: white;
+
+}
+
+nav {
+    position: relative;
+    top: 10px;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-family: Lato;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+header {
+    background-color: rgb(9, 87, 92);
+    height: 125px;
+}
+
+main {
+    padding: 50px;
+    padding-top: 0px;
+}
+
+table {
+    box-sizing: border-box;
+    border-spacing: 2px;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    height: 50px;
+    font-size: 17px;
+    text-align: justify;
+
+}
+
+td, th {
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color:white
+}
+
+td:hover {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    color: yellow;
+    margin-bottom: 5px;
+}
+
+
+
+
