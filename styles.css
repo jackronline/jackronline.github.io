@@ -1,79 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+
+html {
+    font-family: 'Work Sans', sans-serif;
+}
 
 body {
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    background-color: darkgray;
-    background-image: url(./Resources/nature.jpg);
-    margin: 0%;
-}
-
-h1 {
-    text-align: center;
-    opacity: 0.75;
-    font-weight: bold;
-    padding-top: 25px;
-    color: white;
-
-}
-
-nav {
-    position: relative;
-    top: 10px;
-}
-
-li {
-    display: inline-block;
-    padding: 10px;
-    color: white;
-    font-family: Lato;
-}
-
-li:hover {
-    font-weight: bold;
-}
-
-header {
-    background-color: rgb(9, 87, 92);
-    height: 125px;
-}
-
-main {
-    padding: 50px;
-    padding-top: 0px;
-}
-
-table {
-    box-sizing: border-box;
-    border-spacing: 2px;
-}
-
-th {
-    display: table-cell;
-    vertical-align: inherit;
-    font-weight: bold;
-    height: 50px;
-    font-size: 17px;
-    text-align: justify;
-
-}
-
-td, th {
-    padding: 8px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color:white
-}
-
-td:hover {
-    color: yellow;
+    background-color: white;
+    margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
-    color: yellow;
-    margin-bottom: 5px;
+    color: navy;
+    font-size: 9px;
+}
+
+.header {
+    position: fixed;
+    background-color: navy;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+}
+
+#pagehead {
+    font-weight: normal;
+    color: white;
+    margin-left: 70px;
+    top: 20px;
+    position: relative;
+    font-size: 20px;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    color: navy;
+    z-index: 10;
+}
+
+h3 {
+    font-weight: normal;
+    color: gray;
+}
+
+.container {
+    white-space: nowrap;
+}
+
+.colorcontent {
+    position: relative;
+    top: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 
+.logopic {
+    position: relative;
+    float: right;
+    top: -6px;
+    margin-right: 70px;
+}
+
+#navlist {
+    position: relative;
+    text-align: right;
+    margin-right: 130px;
+    top: -50;
+    word-spacing: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+    /*Normally a link will have a different color when visited, but as this is a nav list we want styling 
+    to be consistent at all times*/
+}
+
+a:active {
+    color: darkorange;
+}
+
+#navlist li+li::before {
+    content: "| ";
+}
+
+.navitem {
+    display: inline;
+    color: white;
+}
+
+#navlist a:hover {
+    font-weight: bold;
+}
+
+.container {
+    margin: 70px 70px 0 70px;
+}
+
+.primary-color-container {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.secondary-color-container {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.color-panel {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    min-height: 100px;
+    text-align: center;
+    margin: 30px 10px;
+    margin-left: 0;
+    line-height: 100px;
+    border-radius: 50%;
+}
 
 
+.navy {
+    background-color: navy;
+    color: white;
+}
+
+.navy:hover {
+    border: 2px solid navy;
+    font-size: 115%;
+}
+
+.green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.green:hover {
+    border: 2px solid darkgreen;
+    font-size: 115%;
+}
+
+.beige {
+    background-color: beige;
+    color: black;
+}
+
+.beige:hover {
+    border: 2px solid beige;
+    font-size: 115%;
+}
+
+.orange {
+    background-color: darkorange;
+    color: black;
+}
+
+.orange:hover {
+    border: 2px solid darkorange;
+    font-size: 115%;
+}
+
+.fonts-container {
+    margin-top: 30px;
+}
+
+.font-panel {
+    color: navy;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.work-sans {
+    width: 32%;
+    height: 100px;
+    min-width: 500px;
+}
+
+.sans-serif {
+    margin-left: 100px;
+    width: 32%;
+    height: 100px;
+    min-width: 700px;
+}
+
+.style-panel {
+    margin-top: 30px;
+}
+
+.styles-container {
+    white-space: nowrap;
+}
+
+#header1, #header2, #header3, #paralarge, #paranormal {
+    width: 50%;
+    height: 50px;
+    display: inline;
+    margin-right: 60px;
+}
+
+#header1 {
+    color: navy;
+}
+
+#header2 {
+    border-bottom: none;
+}
+
+#header3 {
+    color: navy;
+}
+
+#paralarge {
+    font-size: 120%;
+}
+
+#bold, #underline, #emph {
+    display: inline;
+    margin-right: 60px;
+    color: navy;
+}
+
+.style-panel2 {
+    margin-top: 30px;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+#emph {
+    font-style: italic;
+}
+
+#button1, #button2, #button3, #button4 {
+    display: inline;
+    width: 230px;
+    height: 60px;
+    margin-right: 30px;
+    /*min-width: 230px;*/
+    min-height: 30px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Work Sans';
+}
+
+.primary-button, .secondary-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#button1 {
+    background-color: orange;
+    color: white;
+}
+
+#button1:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#button1:active {
+    border: 5px solid white;
+    font-size: 9px;
+}
+
+#button2 {
+    background-color: darkorange;
+    color:black;
+    padding: 5px;
+    text-decoration: none;
+    box-shadow: 0px 5px;
+    /* Box shadow defaults to 'color' just like border. color needs to be black here to show up against white background*/
+}
+
+#button2:hover {
+    cursor: pointer;
+}
+
+#button2:active {
+    /*margin-top: 5px; - OLD CODE, Use transform: translate to avoid shifting other page elements on active click. Other 
+    solution would be to make position absolute to remove from flow of webpage*/
+    transform: translateY(5px);
+    color: white;
+    background-color: orange;
+    box-shadow: 0px 0px;
+}
+
+#button3 {
+    background-color: navy;
+    color: white;
+}
+
+#button3:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#button3:active {
+    border: 5px solid white;
+    font-size: 9px;
+}
+
+#button4 {
+    border: 1px solid navy;
+    color: navy;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    box-shadow: 0px 5px;
+}
+
+#button4:hover {
+    cursor: pointer;
+}
+
+#button4:active {
+    transform: translateY(5px);
+    color: navy;
+    box-shadow: 0px 0px;
+}
